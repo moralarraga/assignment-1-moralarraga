@@ -157,7 +157,8 @@ body {
     border-bottom: 1px solid #7e7d79;
 }
 
-/* Responsive Behavior (Mobile) */
+/* - - - - R E S P O N S I V E 
+            B E H A V I O R (Mobile) - - - - - - */
 @media (max-width: 480px){
     .navbar{
         display: none;
