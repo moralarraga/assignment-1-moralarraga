@@ -10,33 +10,79 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="page">
+        <!-- H E A D E R  S E C T I O N -->
         <header class="site-header">
             <div class="aside-header">
-                <div class="hamburger">
+                <!-- Hamburger, Quick Find-->
+                <button class="hamburger">
                     <img src="/assets/menu_icon.png" alt="hamburger-menu">
-                </div>
-                <div class="quick-find">
+                </button>
+                <search class="quick-find">
                     <img src="/assets/search_icon.png" alt="search_icon">    
                     <input type="text" id="quick-find" name="Quick Find" placeholder="Quick Find">
-                </div>                
+                </search>                
             </div>
+            <!-- Task Counter-->
             <div class="task-counter">
-                <div class="check-icon">
+                <button class="check-icon">
                     <img src="/assets/check_icon.png" alt="check_icon">
-                </div>
+                </button>
                 <div class="counter">
-                    <h3>30/5</h3>
+                    <p>30/5</p>
                 </div>
             </div>
         </header>
-
+        <!--   M  A   I   N -->
         <main class="site-main">
+            <!-- A S I D E   N A V -->
             <aside class="navbar">
-                <h1>navbar</h1>
-
+               <nav class="container">
+                <ul class="item-li">
+                    <li class="item">
+                        <img src="/assets/inbox_icon.png" alt="inbox_icon">
+                        <div class="item-label">Inbox</div>
+                        <div class="item-count">5</div>
+                    </li>
+                </ul>
+                <ul class="item-li">
+                    <li class="item">
+                        <img src="/assets/calendar_icon.png" alt="calendar_icon">
+                        <div class="item-label">Today</div>
+                        <div class="item-count">5</div>
+                    </li>
+                </ul>
+                <ul class="item-li">
+                    <li class="item">
+                        <img src="/assets/upcoming_icon.png" alt="upcoming_icon">
+                        <div class="item-label">Upcoming</div>
+                    </li>
+                </ul>
+               </nav>
             </aside>
+            <!-- M A I N   C O N T E N T -->
             <section class="main-content">
-                <h1>main section</h1>
+                <div class="main-title">
+                    <h1>Inbox</h1>
+                </div>
+                <div class="main-tasks">
+                    <ul class="task-list">
+                        <li class="task">
+                            Call Mom
+                        </li>
+                        <li class="task">
+                            Buy the new issue of Scientific American
+                        </li>
+                        <li class="task">
+                            Return the textbook to Josie
+                        </li>
+                        <li class="task">
+                            Buy the new album by Rake
+                        </li>
+                        <li class="task">
+                            Buy a gift card for Dad
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
     </body>
