@@ -1,4 +1,90 @@
 /* This is your CSS files */
+*{
+    padding: none;
+    margin: 0;
+}
+
 body {
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
     color: black
+}
+
+.site-header {
+    background-color: #dc4c3e;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 300px auto;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 0px 10px 0px;
+}
+
+.aside-header {
+    display: flex;
+    margin-left: 40px;
+}
+
+.quick-find{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    padding: 6px 12px;
+}
+
+.quick-find input{
+    background: transparent;
+    color: #dc4c3e;
+    border: none;
+    outline: none;
+}
+
+.quick-find input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.task-counter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.counter h3{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.navbar{
+    border: solid 1px black;
+}
+
+.main-content{
+    border: solid 1px black;
+}
+
+.site-main{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+
+
+/* Responsive Behavior */
+@media (max-width: 480px){
+    .navbar{
+        display: none;
+    }
+    
+    .site-main{
+        grid-template-columns: 1fr;
+    }
 }
